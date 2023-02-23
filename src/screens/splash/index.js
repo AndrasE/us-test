@@ -5,15 +5,12 @@ import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 
 export default function SplashScreen({ navigation }) {
 
-  useEffect(() => {
-
     setTimeout(() => {
       this.anim.play()
     }, 800);
     setTimeout(() => {
-      navigation.navigate("signIn")
+      navigation.replace("signIn")
     }, 2100);
-  },)
 
   return (
     <ImageBackground
