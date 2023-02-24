@@ -1,15 +1,15 @@
+import React from 'react';
 import { Text, ImageBackground } from 'react-native';
-import React, { useEffect } from 'react';
+import Animated, { FadeIn } from 'react-native-reanimated';
 import Lottie from 'lottie-react-native';
-import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 
 export default function SplashScreen({ navigation }) {
 
     setTimeout(() => {
       this.anim.play()
-    }, 800);
+    }, 1000);
     setTimeout(() => {
-      navigation.replace("signIn")
+      navigation.navigate("signIn")
     }, 2100);
 
   return (
@@ -31,7 +31,6 @@ export default function SplashScreen({ navigation }) {
       />
       <Animated.View
         entering={FadeIn.duration(600).delay(800)}
-        exiting={FadeOut.duration(1500)}
       >
         <Text style={{ letterSpacing: 2.5, fontFamily: "SpaceMonoRegular", fontSize: 75, paddingTop: 25, color: "#fff" }}>us</Text>
       </Animated.View>
