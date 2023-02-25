@@ -6,11 +6,11 @@ import { _signInWithGoogle } from '../../config/firebase/GoogleSingIn.js';
 export default function SignInScreen({}) {
   async function googleSignin() {
     _signInWithGoogle().then(data => {
-      if (!data) {
-        console.log('=>Error', 'no data');
+      if(!data) {
+        console.log('=> Error', 'no data');
         return;
       }
-      console.log('=>Success', data);
+      console.log('=> Success', data);
     });
   }
 
