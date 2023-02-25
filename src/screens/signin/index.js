@@ -1,12 +1,12 @@
 import React from 'react';
-import { Text, Button, ImageBackground } from 'react-native';
+import {ImageBackground, Text, TouchableWithoutFeedback} from 'react-native';
 import Lottie from 'lottie-react-native';
-import { _signInWithGoogle } from '../../config/firebase/GoogleSingIn.js';
+import {_signInWithGoogle} from '../../config/firebase/GoogleSingIn.js';
 
 export default function SignInScreen({}) {
   async function googleSignin() {
     _signInWithGoogle().then(data => {
-      if(!data) {
+      if (!data) {
         console.log('=> Error', 'no data');
         return;
       }
@@ -24,7 +24,6 @@ export default function SignInScreen({}) {
         alignItems: 'center',
         padding: 30,
       }}>
-
       <Text
         style={{
           fontSize: 35,
@@ -35,20 +34,15 @@ export default function SignInScreen({}) {
         }}>
         sign-in with your Google account
       </Text>
-
-      <Lottie
-        style={{width: 200}}
-        source={require('../../assets/google-singin.json')}
-        autoPlay
-        loop={false}
-        speed={1.2}
-        onPress={() => {
-          console.log('You tapped the button!');
-        }}
-      />
-
-      <Button title="asdasd" onPress={() => googleSignin()}></Button>
-      
+      <TouchableWithoutFeedback onPress={() => googleSignin()}>
+        <Lottie
+          style={{width: 200}}
+          source={require('../../assets/google-singin.json')}
+          autoPlay
+          loop={false}
+          speed={1.2}
+        />
+      </TouchableWithoutFeedback>
     </ImageBackground>
   );
 }
