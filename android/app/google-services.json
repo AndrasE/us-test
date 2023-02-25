@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "1071924375906",
-    "project_id": "us-chat-cc71c",
-    "storage_bucket": "us-chat-cc71c.appspot.com"
+    "project_number": "144812370315",
+    "project_id": "us-chat-69",
+    "storage_bucket": "us-chat-69.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1071924375906:android:5605482cbd15b7c8f4bc3b",
+        "mobilesdk_app_id": "1:144812370315:android:6454147997c32c50ab278e",
         "android_client_info": {
           "package_name": "com.us"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1071924375906-v1jtambsocfrn2aim3jc3lsbp02co91j.apps.googleusercontent.com",
+          "client_id": "144812370315-3tg37eb0ege366m7ugg7j5m12qgbeq9i.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.us",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "1071924375906-e0uo0mb0lj0evtkti1je83el9tmmfnkv.apps.googleusercontent.com",
+          "client_id": "144812370315-v3pavp9iubr7enalim4oghhuea6kce3g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDJ0nmc5dGKcWERpae3A--SLzzPCSpLOiA"
+          "current_key": "AIzaSyDHm3zPefgqb2EsSEOjAggGioHx0ZqpVs0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1071924375906-cvrv5tjfp5hfgtjn9sbsl7qtf0nj2bne.apps.googleusercontent.com",
+              "client_id": "144812370315-v3pavp9iubr7enalim4oghhuea6kce3g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

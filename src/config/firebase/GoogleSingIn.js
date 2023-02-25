@@ -7,7 +7,7 @@ export const _signInWithGoogle = async () => {
       offlineAccess: false,
       scopes: ['profile', 'email'],
       webClientId:
-        '1071924375906-e0uo0mb0lj0evtkti1je83el9tmmfnkv.apps.googleusercontent.com',
+        '144812370315-hcm19e9ici4g5ou5qp0gv9ube20pj48r.apps.googleusercontent.com',
     });
     await GoogleSignin.hasPlayServices();
     const userInfo = await GoogleSignin.signIn();
